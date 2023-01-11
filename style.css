@@ -18,7 +18,7 @@ body {
 
 h1 {
     text-transform: uppercase;  
-    font-size: 50px; 
+    font-size: 45px; 
 }
 
 h2 {
@@ -34,11 +34,6 @@ h2 {
 
 
 
-hr {
-    height: 2px;
-    background-color: red;
-    border: none;
-}
 
 .container {
     max-width: 100vw;
@@ -135,8 +130,17 @@ hr {
     flex-direction: column;
     list-style: none;
     gap: 10px;
-    font-size: 28px;
+    font-size: 30px;
     padding-inline: 40px;
+}
+
+.social-links a li {
+    color: #fff;
+    
+}
+
+.social-links a li:hover {
+    color: gray;
 }
 
 
@@ -162,16 +166,7 @@ hr {
 }
 
 
-/*Fazer um underline no menu usando o before e after, por enquanto esta usando text-decoration*/
-.burgers-menu a:hover {
-    text-decoration: underline;
-    transition: .5s;
-}
 
-#icons-burgers-menu li {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
 
 .about-content {
     width: 90%;
@@ -261,10 +256,7 @@ hr {
         "image4 image4 image5 image5"
 }
 
-/* .image {
-    background: #d838f4; 
-    
-} */
+
 
 .image-item-1 {
     grid-area: image1;
@@ -406,15 +398,7 @@ hr {
 
    
 
-    
-
-   
-
-
-
-    
-
-   
+       
 
     .banner {
         width: 100%;
@@ -434,6 +418,7 @@ hr {
 
     .banner-description {
         width: 100%;
+        margin-top: 140px;
         display: flex;
         padding-inline: 30px;
         
@@ -464,7 +449,7 @@ hr {
     }
 
     .about-description {
-        width: 350px;
+        width: 700px;
         padding-inline: 5px;
         margin: auto;
         text-align: jusitify;
@@ -519,6 +504,7 @@ hr {
         font-weight: 600;
         font-size: 18px;
         cursor: pointer;
+        color: #000;
     }
     
     .btn-buy:hover {
@@ -530,7 +516,7 @@ hr {
    
 
     .image-wrapper {
-        width: 400px;
+        width: 700px;
         border: none;
        
     }
@@ -540,7 +526,23 @@ hr {
     }
 
 
+    /* ================GALERIA===================== */
+    .galery-container {
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 2fr 2fr 2fr 3fr 3fr;
+        grid-template-columns: 1fr 1fr;
 
+        grid-template-areas:
+        "image1 image2"
+        "image1 image2"
+        "image4 image3"
+        "image4 image3"
+        "image5 image5"
+       
+        
+    }
 
 
 
@@ -563,7 +565,7 @@ hr {
 
 
 
-@media(max-width: 785px) {
+@media(max-width: 765px) {
    
     #header-principal {
         width: 100%;
@@ -642,7 +644,7 @@ hr {
 
     .banner {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         background-image: url("./assets/barber-banner-mobile2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -700,6 +702,9 @@ hr {
         gap: 40px;
     }
 
+    .about-description {
+        width: 350px;
+    }
 
     .about-description h2 {
         font-size: 25px;
@@ -714,6 +719,7 @@ hr {
         border: none;
         padding: 10px 15px;
         margin: 10px;
+        color: #000;
         border-radius: 20px;
         font-weight: 600;
         font-size: 18px;
@@ -773,5 +779,16 @@ hr {
     }
    
    
+}
+
+@media(max-width: 375px) {
+    .banner-description {
+        width: 100%;
+        display: flex;
+        padding-inline: 30px;
+        margin-top: 10px;
+        
+    }
+
 }
 
