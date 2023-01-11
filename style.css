@@ -37,6 +37,7 @@ h2 {
 
 .container {
     max-width: 100vw;
+    
    
 }
 
@@ -53,7 +54,6 @@ h2 {
     border: none;
     border-radius: 50px;
     position: absolute;
-    
     background-color: rgba(65, 61, 60, 0.726);
     backdrop-filter: blur(3px);
 }
@@ -95,10 +95,12 @@ h2 {
     display: flex;
     max-width: 100%;
     height: 95vh;
-    background-image: url('./assets/barber-banner.jpg');
+    background: rgba(0,0,0,0.2) url('./assets/barber-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
+    background-blend-mode:darken;
+    
     margin-top: 50px;
 
 }
