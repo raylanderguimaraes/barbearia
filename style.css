@@ -248,7 +248,6 @@ hr {
 .galery-container {
     width: 90%;
     height: 100vh;
-    background:#200a3f;
     display: grid;
     margin: 10px auto;
     grid-template-rows: repeat( 4, 1fr);
@@ -262,10 +261,10 @@ hr {
         "image4 image4 image5 image5"
 }
 
-.image {
+/* .image {
     background: #d838f4; 
     
-}
+} */
 
 .image-item-1 {
     grid-area: image1;
