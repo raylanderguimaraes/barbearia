@@ -318,6 +318,12 @@ h2 {
     color: gray;
 }
 
+.photos-links {
+    margin: 20px auto ;
+    width: 900px;
+    
+}
+
 
 
 
@@ -546,9 +552,13 @@ h2 {
     }
 
 
-
+/* ================FOOTER=============== */
   
-   
+.photos-links {
+    margin: 20px auto ;
+    width: 350px;
+    
+}
 
    
 
