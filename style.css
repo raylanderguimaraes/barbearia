@@ -213,6 +213,7 @@ h2 {
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
+    color: #000;
 }
 
 .btn-buy:hover, .btn-order:hover {
