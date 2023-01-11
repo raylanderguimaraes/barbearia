@@ -249,7 +249,7 @@ hr {
     width: 90%;
     height: 100vh;
     display: grid;
-    margin: 10px auto;
+    margin: 60px auto;
     grid-template-rows: repeat( 4, 1fr);
     grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;
